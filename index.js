@@ -9,6 +9,7 @@ const stock = require('./lib/stock');
 const market = require('./lib/market');
 const search = require('./lib/search');
 const auth = require('./lib/auth');
+const calendar = require('./lib/calendar');
 
 
 module.exports = (apikey) => {
@@ -22,6 +23,7 @@ module.exports = (apikey) => {
       search: search,
       commodities: commodities,
       etf: etf,
-      mutualfund: mutualfund
+      mutualfund: mutualfund,
+      calendar,
   }
 }
